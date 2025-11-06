@@ -12,6 +12,7 @@ export class ProductsPage {
   }
 
   async navigateToSecondPage() {
+    await this.secondPage.scrollIntoViewIfNeeded();
     await this.secondPage.click();
   }
 
